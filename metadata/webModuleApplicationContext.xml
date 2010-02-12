@@ -13,4 +13,15 @@
            
     <context:component-scan base-package="org.openmrs.module.patientnotes" />
     
+    <bean id="patientnotesUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    	<property name="order"><value>1</value></property>
+    	<property name="mappings">
+            <props>
+				<prop key="**/patientNotes.portlet">patientNotesPortletController</prop>
+	    	</props>
+		</property>
+    </bean>
+    
+    <bean id="patientNotesPortletController" class="org.openmrs.module.patientnotes.web.controller.PatientNotesPortletController" />
+    
 </beans>
