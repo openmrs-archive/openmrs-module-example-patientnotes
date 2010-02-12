@@ -40,7 +40,7 @@ public class PatientNotesController {
 		note.setText(text);
 		Context.getService(NoteService.class).saveNote(note);
 		if (returnUrl == null)
-			returnUrl = "notes.form";
+			returnUrl = "notes.form?patient_id=" + patient.getPatientId();
 		return "redirect:" + returnUrl;
 	}
 	

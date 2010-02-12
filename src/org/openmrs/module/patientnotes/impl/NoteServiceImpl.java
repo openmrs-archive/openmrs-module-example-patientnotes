@@ -3,6 +3,7 @@ package org.openmrs.module.patientnotes.impl;
 import java.util.List;
 
 import org.openmrs.Patient;
+import org.openmrs.api.context.Context;
 import org.openmrs.api.impl.BaseOpenmrsService;
 import org.openmrs.module.patientnotes.Note;
 import org.openmrs.module.patientnotes.NoteService;
@@ -30,7 +31,7 @@ public class NoteServiceImpl extends BaseOpenmrsService implements NoteService {
 	
 	@Transactional(readOnly=true)
 	public List<Note> getNotesByPatient(Patient patient) {
-		return (List<Note>) dao.getNotes(patient);
+		return dao.getNotes(patient);
 	}
 	
 	@Transactional

@@ -7,7 +7,6 @@ import org.openmrs.Patient;
 public class Note extends BaseOpenmrsData {
 	
 	private Integer id;
-	private String uuid;
 	private Patient patient;
 	private String title;
 	private String text;
@@ -63,20 +62,6 @@ public class Note extends BaseOpenmrsData {
      */
     public void setText(String text) {
     	this.text = text;
-    }
-	
-    /**
-     * @return the uuid
-     */
-    public String getUuid() {
-    	return uuid;
-    }
-	
-    /**
-     * @param uuid the uuid to set
-     */
-    public void setUuid(String uuid) {
-    	this.uuid = uuid;
     }
 	
 }
