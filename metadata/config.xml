@@ -3,15 +3,15 @@
 <module configVersion="1.0">
 	
 	<!-- Patient Notes Properties -->
-	<id>patientnotes</id>
-	<name>Patient Notes</name>
+	<id>patientnotes</id> <!-- The unique internal id used in urls -->
+	<name>Patient Notes</name> <!-- Longer descriptive name used on Manage Modules page -->
 	<version>1.0</version>
-	<package>org.openmrs.module.@MODULE_ID@</package>
-	<author>djazayeri and bwolfe</author>
+	<package>org.openmrs.module.@MODULE_ID@</package> <!-- Distinct package name for this module.  MODULE_ID refrences "id" element from above -->
+	<author>djazayeri and bwolfe</author> <!-- Custom string representation of the author  -->
 	<description>
-			
+		
 	</description>
-	<activator>@MODULE_PACKAGE@.PatientNotesModuleActivator</activator>
+	<activator>@MODULE_PACKAGE@.PatientNotesModuleActivator</activator> <!-- Class called when the module is installed into openmrs and when the module is turned off -->
 	<!-- /Patient Notes Properties -->
 	
 	<extension>
@@ -19,7 +19,7 @@
 		<class>@MODULE_PACKAGE@.extension.html.PatientNotesDashboardTabExt</class>
 	</extension>
 	
-	<mappingFiles>
+	<mappingFiles> <!-- The hibernate mapping file stored in /metadata/Note.hbm.xml and in the omod when packaged -->
 		Note.hbm.xml
 	</mappingFiles>
 	

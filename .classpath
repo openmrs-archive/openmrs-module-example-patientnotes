@@ -37,7 +37,7 @@
 	<classpathentry kind="lib" path="/openmrs-1.6.x/lib/xerces/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="/openmrs-1.6.x/lib/slf4j/slf4j-api-1.5.6.jar"/>
 	<classpathentry kind="lib" path="/openmrs-1.6.x/lib/slf4j/slf4j-log4j12-1.5.6.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-6-sun-1.6.0.16"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib-common/openmrs-api-1.6.0.11873-beta.jar" sourcepath="/openmrs-1.6.x"/>
 	<classpathentry kind="lib" path="lib-common/tests-openmrs-api-1.6.0.11873-beta.jar"/>
 	<classpathentry kind="lib" path="lib-common/web-openmrs-api-1.6.0.11873-beta.jar"/>

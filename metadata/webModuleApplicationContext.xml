@@ -11,6 +11,12 @@
            http://www.springframework.org/schema/util
            http://www.springframework.org/schema/util/spring-util-2.0.xsd">
            
+    
+    <!-- This is a normal spring application context file that gets loaded only in the web environment -->
+    
+    <!-- This tells spring to look in org.openmrs.module.patientnotes for @Controller annotations.
+         Any annotations found causes spring to look at methods in that class that have the @RequestMapping annotation.
+         Those mapping annotations are cached so that spring can map urls to controller methods -->
     <context:component-scan base-package="org.openmrs.module.patientnotes" />
     
     <bean id="patientnotesUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">

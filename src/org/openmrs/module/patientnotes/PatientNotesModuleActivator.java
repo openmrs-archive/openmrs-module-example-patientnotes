@@ -18,25 +18,34 @@ import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.Activator;
 
 /**
- * This class contains the logic that is run every time this module
- * is either started or shutdown
+ * This class contains the logic that is run every time this module is either
+ * started or shutdown. This class is referenced from config.xml so that openmrs
+ * knows to run it. <br/>
+ * <br/>
+ * 
  */
 public class PatientNotesModuleActivator implements Activator {
 
 	private Log log = LogFactory.getLog(this.getClass());
 
 	/**
+	 * This method is called when a user uploads the omod to openmrs or when
+	 * openmrs starts up with this module.
+	 * 
 	 * @see org.openmrs.module.Activator#startup()
 	 */
 	public void startup() {
 		log.info("Starting Patient Notes");
 	}
-	
+
 	/**
-	 *  @see org.openmrs.module.Activator#shutdown()
+	 * This is called when someone "unloads" the omod using the Manage Modules
+	 * page or when openmrs shuts down.
+	 * 
+	 * @see org.openmrs.module.Activator#shutdown()
 	 */
 	public void shutdown() {
 		log.info("Shutting down Patient Notes");
 	}
-	
+
 }
